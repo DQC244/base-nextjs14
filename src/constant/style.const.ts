@@ -1,0 +1,2 @@
+// KHOẢNG ĐỘ DÀI CỦA THANH INPUT SEARCH
+export const FILTER_WIDTH = 2.4;
