@@ -9,7 +9,7 @@ const AppModalContent = ({
   return (
     <DialogContent
       className="custom-scrollbar"
-      sx={{ p: 0, px: 3, ...sx }}
+      sx={{ p: 0, px: 3, pt: 2, ...sx }}
       {...otherProps}
     >
       {children}

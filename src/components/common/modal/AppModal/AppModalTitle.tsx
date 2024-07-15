@@ -1,14 +1,14 @@
 import React, { memo } from "react";
-import { AppTypography, AppTypographyProps } from "@root/components/common";
+import { Typography, TypographyProps } from "@mui/material";
 
 const AppModalTitle = ({ children, ...otherProps }: AppModalTitleProps) => {
   return (
-    <AppTypography variant="h3" p={3} pr={6.5} {...otherProps}>
+    <Typography variant="h3" p={3} pr={6.5} {...otherProps}>
       {children}
-    </AppTypography>
+    </Typography>
   );
 };
 
-export type AppModalTitleProps = AppTypographyProps;
+export type AppModalTitleProps = TypographyProps;
 
 export default memo(AppModalTitle);

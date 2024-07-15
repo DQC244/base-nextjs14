@@ -7,7 +7,11 @@ const AppModalAction = ({
   ...otherProps
 }: AppModalActionProps) => {
   return (
-    <DialogActions id="footer-modal" sx={{ p: 3, ...sx }} {...otherProps}>
+    <DialogActions
+      id="footer-modal"
+      sx={{ p: 3, justifyContent: "center", ...sx }}
+      {...otherProps}
+    >
       {children}
     </DialogActions>
   );

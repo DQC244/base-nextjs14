@@ -10,9 +10,9 @@ const palette: TPalette = {
     white,
   },
   primary: {
-    main: "#1976d2",
-    light: "#42a5f5",
-    dark: "#1565c0",
+    main: "#635bff",
+    light: "#7578ff",
+    dark: "#4e36f5",
     contrastText: white,
   },
   secondary: {
@@ -51,7 +51,7 @@ const palette: TPalette = {
     contrastText: white,
   },
   grey: {
-    50: "#fafafa",
+    50: "#dcdfe4",
     100: "#F5F5F5",
     200: "#F0F0F0",
     300: "#D9D9D9",
@@ -69,7 +69,7 @@ const palette: TPalette = {
     A900: "#3D3D3D",
   },
   text: {
-    primary: black,
+    primary: "#212636",
     secondary: white,
     disabled: "rgba(0, 0, 0, 0.38)",
   },

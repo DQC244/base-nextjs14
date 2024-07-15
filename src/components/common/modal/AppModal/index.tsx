@@ -41,21 +41,26 @@ const AppModal = ({
       scroll="paper"
       sx={{
         "& .MuiDialog-paper": {
-          minWidth: 450,
+          minWidth: { xs: "328px", md: 638 },
           borderRadius: "8px",
           boxShadow: "0px 0px 20px 0px rgba(0, 0, 0, 0.25)",
+          m: { xs: 2, md: 4 },
         },
         ...sx,
+      }}
+      PaperProps={{
+        className: "custom-scrollbar",
       }}
       {...otherProps}
     >
       {hasCloseIcon && (
         <IconButton
+          aria-label="close"
           sx={{
             position: "absolute",
-            top: 22,
+            top: 18,
             right: 16,
-            fontSize: 16,
+            fontSize: 24,
             zIndex: 1,
             color: "common.black",
             ...closeIconSx,

@@ -1,9 +1,9 @@
 import { Palette } from "@mui/material";
 import { TypographyOptions } from "@mui/material/styles/createTypography";
-import { Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700"],
+const inter = Inter({
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -12,56 +12,56 @@ const typography:
   | TypographyOptions
   | ((palette: Palette) => TypographyOptions)
   | undefined = {
-  fontFamily: roboto.style.fontFamily,
+  fontFamily: inter.style.fontFamily,
   h1: {
-    fontSize: 46,
+    fontSize: 38,
     fontWeight: 700,
-    lineHeight: "56px",
+    lineHeight: "46px",
   },
   h2: {
-    fontSize: 34,
+    fontSize: 30,
     fontWeight: 700,
-    lineHeight: "48px",
+    lineHeight: "38px",
   },
   h3: {
-    fontSize: 23,
-    fontWeight: 700,
+    fontSize: 24,
+    fontWeight: 500,
     lineHeight: "32px",
   },
   h4: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 700,
-    lineHeight: "24px",
+    lineHeight: "28px",
   },
   h5: {
-    fontSize: 14,
-    fontWeight: 400,
-    lineHeight: "18px",
-  },
-  body1: {
     fontSize: 16,
     fontWeight: 400,
     lineHeight: "24px",
   },
-  body2: {
+  body1: {
     fontSize: 14,
+    fontWeight: 400,
+    lineHeight: "22px",
+  },
+  body2: {
+    fontSize: 12,
     fontWeight: 400,
     lineHeight: "20px",
   },
   subtitle1: {
-    fontSize: 18,
-    fontWeight: 400,
-    lineHeight: "20px",
+    fontSize: 14,
+    fontWeight: 500,
+    lineHeight: "22px",
   },
   subtitle2: {
-    fontSize: 16,
-    fontWeight: 600,
+    fontSize: 12,
+    fontWeight: 500,
     lineHeight: "20px",
   },
   caption: {
     fontSize: 12,
     fontWeight: 400,
-    lineHeight: "14px",
+    lineHeight: "20px",
   },
 };
 
