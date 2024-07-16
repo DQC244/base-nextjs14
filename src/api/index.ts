@@ -1,4 +1,4 @@
-import { ApiConstant, AppConstant, EnvConstant } from "@/constant";
+import { ApiConstant, AppConstant, EnvConstant } from "@constant";
 import cookies from "js-cookie";
 
 type CustomOptions = RequestInit & {

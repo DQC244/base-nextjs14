@@ -3,7 +3,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker, DatePickerProps } from "@mui/x-date-pickers/DatePicker";
 import "dayjs/locale/vi";
-import AppTextField from "../form/AppTextField";
+import { TextField } from "@mui/material";
 
 const AppDatePicker = forwardRef<HTMLInputElement, DatePickerProps<any>>(
   (props: DatePickerProps<any>, ref) => {
@@ -13,7 +13,7 @@ const AppDatePicker = forwardRef<HTMLInputElement, DatePickerProps<any>>(
           inputRef={ref}
           dayOfWeekFormatter={(day) => day}
           slots={{
-            textField: AppTextField,
+            textField: TextField,
           }}
           slotProps={{
             textField: {

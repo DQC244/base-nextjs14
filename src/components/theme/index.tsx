@@ -12,10 +12,11 @@ import {
 } from "@mui/material/styles";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { CssBaseline } from "@mui/material";
-import themeConfig from "@/configs/themeConfig";
+import themeConfig from "@configs/themeConfig";
 import ModeChanger from "./ModeChanger";
 import type {} from "@mui/lab/themeAugmentation"; //! Do not remove this import otherwise you will get type errors while making a production build
 import type {} from "@mui/material/themeCssVarsAugmentation"; //! Do not remove this import otherwise you will get type errors while making a production build
+import primaryColorConfig from "@configs/primaryColorConfig";
 
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const { settings } = useSettings();
@@ -29,7 +30,7 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
   }, [settings.mode]);
 
   return (
-    <AppRouterCacheProvider>
+    <AppRouterCacheProvider options={{ prepend: true }}>
       <CssVarsProvider
         theme={theme}
         defaultMode={settings.mode}
@@ -51,18 +52,18 @@ const COLOR_SCHEME = {
     light: {
       palette: {
         primary: {
-          main: "#ee964b",
-          light: "#F4D35E",
-          dark: "#28AFB0",
+          main: primaryColorConfig[0].main,
+          light: lighten(primaryColorConfig[0].main as string, 0.2),
+          dark: darken(primaryColorConfig[0].main as string, 0.1),
         },
       },
     },
     dark: {
       palette: {
         primary: {
-          main: "#19647E",
-          light: "#FB4570",
-          dark: "#FB6B90",
+          main: primaryColorConfig[0].main,
+          light: lighten(primaryColorConfig[0].main as string, 0.2),
+          dark: darken(primaryColorConfig[0].main as string, 0.1),
         },
       },
     },

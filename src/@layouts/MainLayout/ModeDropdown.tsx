@@ -9,7 +9,7 @@ import IconButton from "@mui/material/IconButton";
 
 // Hook Imports
 import { useSettings } from "@core/hooks/useSettings";
-import { CloseIcon } from "@/components/icons";
+import { CloseIcon } from "@components/icons";
 
 const ModeDropdown = () => {
   // States

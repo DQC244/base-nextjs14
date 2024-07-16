@@ -5,11 +5,7 @@ import ModeDropdown from "./ModeDropdown";
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <Box mt={`${HEIGHT_OF_TOP_BAR}px`}>
-      <AppBar
-        position="fixed"
-        color="primary"
-        sx={{ height: HEIGHT_OF_TOP_BAR }}
-      >
+      <AppBar position="fixed">
         <Toolbar>
           <Typography variant="h6">app bar</Typography>
           <ModeDropdown />

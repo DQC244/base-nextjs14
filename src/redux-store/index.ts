@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { EnvConstant } from "@/constant";
+import { EnvConstant } from "@constant";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import appReducer, { appSlice } from "./app.slice";
 

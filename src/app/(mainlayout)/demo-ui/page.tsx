@@ -9,7 +9,7 @@ const page = () => {
         <Button variant="outlined">primary</Button>
         <Button variant="text">primary</Button>
       </Stack>
-      <Stack direction="row" spacing={2}>
+      <Stack direction="row" spacing={2} sx={{}}>
         <TextField required label="name"></TextField>
         <TextField label="name" variant="standard"></TextField>
         <TextField label="name" variant="filled"></TextField>

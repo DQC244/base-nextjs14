@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { AppModal, AppModalProps } from "@/components/common";
+import { AppModal, AppModalProps } from "@components/common";
 import { Button } from "@mui/material";
 
 const AppConfirmModal = ({

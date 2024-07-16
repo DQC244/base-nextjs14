@@ -8,7 +8,7 @@ import {
   useState,
 } from "react";
 import type { Mode } from "@core/types";
-import themeConfig from "@/configs/themeConfig";
+import themeConfig from "@configs/themeConfig";
 import { useObjectCookie } from "@core/hooks/useObjectCookie";
 
 export const SettingsContext = createContext<IInitState | null>(null);
