@@ -1,7 +1,7 @@
 // MUI Imports
-import type { Theme } from '@mui/material/styles'
+import type { Theme } from "@mui/material/styles";
 
-const badges: Theme['components'] = {
+const badges: Theme["components"] = {
   MuiBadge: {
     styleOverrides: {
       standard: ({ theme }) => ({
@@ -10,10 +10,10 @@ const badges: Theme['components'] = {
         borderRadius: 20,
         fontSize: theme.typography.subtitle2.fontSize,
         lineHeight: 1.07,
-        padding: theme.spacing(1, 2)
-      })
-    }
-  }
-}
+        padding: theme.spacing(0.5, 1),
+      }),
+    },
+  },
+};
 
-export default badges
+export default badges;

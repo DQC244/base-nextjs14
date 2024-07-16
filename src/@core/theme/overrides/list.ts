@@ -9,8 +9,8 @@ const list: Theme["components"] = {
       }),
       padding: ({ theme, ownerState }) => ({
         ...(!ownerState.dense && {
-          paddingBlock: theme.spacing(2),
-          paddingInlineStart: theme.spacing(5),
+          paddingBlock: theme.spacing(1),
+          paddingInlineStart: theme.spacing(2.5),
         }),
       }),
     },
@@ -37,11 +37,11 @@ const list: Theme["components"] = {
   MuiListItemButton: {
     styleOverrides: {
       root: ({ theme, ownerState }) => ({
-        gap: theme.spacing(4),
+        gap: theme.spacing(2),
         ...(!ownerState.dense && {
-          paddingBlock: theme.spacing(2),
+          paddingBlock: theme.spacing(1),
         }),
-        paddingInlineStart: theme.spacing(5),
+        paddingInlineStart: theme.spacing(2.5),
         "&.Mui-selected": {
           backgroundColor: "var(--mui-palette-primary-lightOpacity)",
           "&:hover, &.Mui-focused, &.Mui-focusVisible": {
@@ -72,7 +72,7 @@ const list: Theme["components"] = {
       root: ({ theme }) => ({
         ...theme.typography.subtitle2,
         paddingBlock: 10,
-        paddingInline: theme.spacing(5),
+        paddingInline: theme.spacing(2.5),
       }),
     },
   },

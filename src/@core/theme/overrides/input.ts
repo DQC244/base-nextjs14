@@ -74,7 +74,7 @@ const input: Theme["components"] = {
         ...(ownerState?.size === "medium" && {
           "&:not(.MuiInputBase-inputMultiline, .MuiInputBase-inputAdornedStart)":
             {
-              paddingBlock: theme.spacing(4),
+              paddingBlock: theme.spacing(2),
             },
           height: "1.5em",
         }),
