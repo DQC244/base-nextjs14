@@ -8,7 +8,7 @@ import { Fragment, ReactNode, memo } from "react";
 import AppModalAction, { AppModalActionProps } from "./AppModalAction";
 import AppModalContent, { AppModalContentProps } from "./AppModalContent";
 import AppModalTitle, { AppModalTitleProps } from "./AppModalTitle";
-import { CloseIcon } from "@root/components/icons";
+import { CloseIcon } from "@/components/icons";
 
 const AppModal = ({
   isOpen,

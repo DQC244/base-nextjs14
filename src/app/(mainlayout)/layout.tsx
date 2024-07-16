@@ -1,4 +1,4 @@
-import MainLayout from "@root/layouts/MainLayout";
+import MainLayout from "@layouts/MainLayout";
 import React from "react";
 
 const layout = ({ children }) => {

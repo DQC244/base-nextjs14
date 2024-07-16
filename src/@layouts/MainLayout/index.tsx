@@ -1,5 +1,6 @@
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import React, { ReactNode } from "react";
+import ModeDropdown from "./ModeDropdown";
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
@@ -11,6 +12,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       >
         <Toolbar>
           <Typography variant="h6">app bar</Typography>
+          <ModeDropdown />
         </Toolbar>
       </AppBar>
       {children}

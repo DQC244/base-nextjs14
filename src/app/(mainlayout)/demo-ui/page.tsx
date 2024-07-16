@@ -1,5 +1,4 @@
-import { Button, Stack } from "@mui/material";
-import { AppTextField } from "@root/components/common";
+import { Button, Stack, TextField } from "@mui/material";
 import React from "react";
 
 const page = () => {
@@ -11,9 +10,9 @@ const page = () => {
         <Button variant="text">primary</Button>
       </Stack>
       <Stack direction="row" spacing={2}>
-        <AppTextField required label="name"></AppTextField>
-        <AppTextField label="name" variant="standard"></AppTextField>
-        <AppTextField label="name" variant="filled"></AppTextField>
+        <TextField required label="name"></TextField>
+        <TextField label="name" variant="standard"></TextField>
+        <TextField label="name" variant="filled"></TextField>
       </Stack>
     </Stack>
   );

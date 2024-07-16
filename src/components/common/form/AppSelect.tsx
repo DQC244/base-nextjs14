@@ -1,6 +1,6 @@
 import { forwardRef, memo } from "react";
 import { Select, SelectProps } from "@mui/material";
-import DropdownIcon from "@root/components/icons/DropdownIcon";
+import DropdownIcon from "@/components/icons/DropdownIcon";
 
 const AppSelect = forwardRef(({ sx, ...otherProps }: SelectProps, ref) => {
   return <Select ref={ref} IconComponent={DropdownIcon} {...otherProps} />;

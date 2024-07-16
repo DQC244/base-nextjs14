@@ -1,4 +1,3 @@
-import AppTypography, { AppTypographyProps } from "./AppTypography";
 import AppModal, { AppModalProps } from "./modal/AppModal";
 import AppLink, { AppLinkProps } from "./AppLink";
 import AppImage from "./AppImage";
@@ -8,7 +7,6 @@ import AppCheckbox from "./form/AppCheckbox";
 import AppSelect from "./form/AppSelect";
 
 export {
-  AppTypography,
   AppModal,
   AppLink,
   AppImage,
@@ -20,4 +18,4 @@ export {
 
 // type
 
-export type { AppTypographyProps, AppModalProps, AppLinkProps };
+export type { AppModalProps, AppLinkProps };
