@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.scss";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 import { AppConstant } from "@constant";
 import StoreProvider from "@redux-store/StoreProvider";
 import Providers from "@components/Providers";

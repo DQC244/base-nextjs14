@@ -6,6 +6,7 @@ const appBar: Theme["components"] = {
     styleOverrides: {
       root: {
         backgroundColor: "var(--mui-palette-background-default)",
+        boxShadow: "var(--mui-shadows-3)",
       },
     },
   },
