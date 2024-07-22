@@ -1,1 +1,1 @@
-export const LogoImage = "/images/img-girl.webp";
+export const LogoImage = "/images/img-logo.png";

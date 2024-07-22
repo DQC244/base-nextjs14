@@ -1,8 +1,22 @@
-import MainLayout from "@layouts/MainLayout";
+import Navigation from "@components/layout/Navigation";
+import LayoutWrapper from "@layouts/LayoutWrapper";
+import VerticalLayout from "@layouts/VerticalLayout";
 import React from "react";
 
 const layout = ({ children }) => {
-  return <MainLayout>{children}</MainLayout>;
+  return (
+    <LayoutWrapper
+      verticalLayout={
+        <VerticalLayout
+          navigation={<Navigation />}
+          // navbar={<Navbar />}
+          // footer={<VerticalFooter />}
+        >
+          {children}
+        </VerticalLayout>
+      }
+    />
+  );
 };
 
 export default layout;
